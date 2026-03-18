@@ -4,9 +4,9 @@ import altair as alt
 import streamlit as st
 # import geopandas as gpd
 # import matplotlib.pyplot as plt
-from sklearn.linear_model import Lasso
-from shapely.geometry import Point
-from shapely.geometry import Point, LineString
+# from sklearn.linear_model import Lasso
+# from shapely.geometry import Point
+# from shapely.geometry import Point, LineString
 
 # --- Opener ---
 st.title('Loop Detectives of the Bellevue Commute')
