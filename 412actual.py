@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import altair as alt
 import streamlit as st
-import geopandas as gpd
+# import geopandas as gpd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import Lasso
 from shapely.geometry import Point
@@ -49,8 +49,8 @@ sensor_data = pd.DataFrame({
 })
 
 geometry = [Point(xy) for xy in zip(sensor_data["Longitude"], sensor_data["Latitude"])]
-gdf = gpd.GeoDataFrame(sensor_data, geometry=geometry, crs="EPSG:4326")
-st.map(gdf.rename(columns={"Latitude": "lat", "Longitude": "lon"}))
+# gdf = gpd.GeoDataFrame(sensor_data, geometry=geometry, crs="EPSG:4326")
+# st.map(gdf.rename(columns={"Latitude": "lat", "Longitude": "lon"}))
 
 # -----------------------------------------------------------------------------------------
 # --- E/R Diagram ---
